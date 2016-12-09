@@ -1,0 +1,3 @@
+[submodule "src/Submodules/HoneyBear.HalClient"]
+	path = src/Submodules/HoneyBear.HalClient
+	url = https://github.com/berhir/HoneyBear.HalClient.git
