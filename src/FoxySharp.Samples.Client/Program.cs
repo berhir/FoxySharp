@@ -1,6 +1,7 @@
 ﻿using FoxySharp.Api;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
+using System;
 
 namespace FoxySharp.Samples.Client
 {
@@ -22,6 +23,11 @@ namespace FoxySharp.Samples.Client
                 config.GetSection("FoxyCart")["RefreshToken"]);
 
             var customers = foxyService.GetCustomers();
+
+            foreach (var customer in customers)
+            {
+                Console.WriteLine($"{customer.FirstName} {customer.LastName}");
+            }
 
             //var customer = foxyService.GetCustomer(customers.First().Id);
 
