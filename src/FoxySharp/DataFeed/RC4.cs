@@ -1,4 +1,4 @@
-﻿namespace FoxySharp.WebHooks
+﻿namespace FoxySharp.DataFeed
 {
     /// <summary>
     /// Encryp/Decrypt using RC4

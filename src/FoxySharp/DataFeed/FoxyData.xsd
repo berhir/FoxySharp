@@ -1,0 +1,236 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="custom_field_name" type="xs:string"/>
+  <xs:element name="custom_field_value" type="xs:string"/>
+  <xs:element name="custom_field_is_hidden" type="xs:byte"/>
+  <xs:element name="custom_field">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="custom_field_name"/>
+        <xs:element ref="custom_field_value"/>
+        <xs:element ref="custom_field_is_hidden"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_option_name" type="xs:string"/>
+  <xs:element name="product_option_value" type="xs:string"/>
+  <xs:element name="price_mod" type="xs:float"/>
+  <xs:element name="weight_mod" type="xs:float"/>
+  <xs:element name="transaction_detail_option">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="product_option_name"/>
+        <xs:element ref="product_option_value"/>
+        <xs:element ref="price_mod"/>
+        <xs:element ref="weight_mod"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_name" type="xs:string"/>
+  <xs:element name="product_price" type="xs:float"/>
+  <xs:element name="product_quantity" type="xs:byte"/>
+  <xs:element name="product_weight" type="xs:float"/>
+  <xs:element name="product_code" type="xs:string"/>
+  <xs:element name="parent_code" type="xs:string"/>
+  <xs:element name="image" type="xs:string"/>
+  <xs:element name="url" type="xs:string"/>
+  <xs:element name="length" type="xs:string"/>
+  <xs:element name="width" type="xs:string"/>
+  <xs:element name="height" type="xs:string"/>
+  <xs:element name="expires" type="xs:string"/>
+  <xs:element name="sub_token_url" type="xs:string"/>
+  <xs:element name="subscription_frequency" type="xs:string"/>
+  <xs:element name="subscription_startdate" type="xs:string"/>
+  <xs:element name="subscription_nextdate" type="xs:string"/>
+  <xs:element name="subscription_enddate" type="xs:string"/>
+  <xs:element name="is_future_line_item" type="xs:byte"/>
+  <xs:element name="shipto" type="xs:string"/>
+  <xs:element name="category_description" type="xs:string"/>
+  <xs:element name="category_code" type="xs:string"/>
+  <xs:element name="product_delivery_type" type="xs:string"/>
+  <xs:element name="transaction_detail_options">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="transaction_detail_option" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transaction_detail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="product_name"/>
+        <xs:element ref="product_price"/>
+        <xs:element ref="product_quantity"/>
+        <xs:element ref="product_weight"/>
+        <xs:element ref="product_code"/>
+        <xs:element ref="parent_code"/>
+        <xs:element ref="image"/>
+        <xs:element ref="url"/>
+        <xs:element ref="length"/>
+        <xs:element ref="width"/>
+        <xs:element ref="height"/>
+        <xs:element ref="expires"/>
+        <xs:element ref="sub_token_url"/>
+        <xs:element ref="subscription_frequency"/>
+        <xs:element ref="subscription_startdate"/>
+        <xs:element ref="subscription_nextdate"/>
+        <xs:element ref="subscription_enddate"/>
+        <xs:element ref="is_future_line_item"/>
+        <xs:element ref="shipto"/>
+        <xs:element ref="category_description"/>
+        <xs:element ref="category_code"/>
+        <xs:element ref="product_delivery_type"/>
+        <xs:element ref="transaction_detail_options"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:int"/>
+  <xs:element name="store_id" type="xs:byte"/>
+  <xs:element name="store_version" type="xs:string"/>
+  <xs:element name="is_test" type="xs:byte"/>
+  <xs:element name="is_hidden" type="xs:byte"/>
+  <xs:element name="data_is_fed" type="xs:byte"/>
+  <xs:element name="transaction_date" type="xs:string"/>
+  <xs:element name="processor_response" type="xs:string"/>
+  <xs:element name="customer_id" type="xs:short"/>
+  <xs:element name="is_anonymous" type="xs:byte"/>
+  <xs:element name="minfraud_score" type="xs:byte"/>
+  <xs:element name="customer_first_name" type="xs:string"/>
+  <xs:element name="customer_last_name" type="xs:string"/>
+  <xs:element name="customer_company" type="xs:string"/>
+  <xs:element name="customer_address1" type="xs:string"/>
+  <xs:element name="customer_address2" type="xs:string"/>
+  <xs:element name="customer_city" type="xs:string"/>
+  <xs:element name="customer_state" type="xs:string"/>
+  <xs:element name="customer_postal_code" type="xs:int"/>
+  <xs:element name="customer_country" type="xs:string"/>
+  <xs:element name="customer_phone" type="xs:string"/>
+  <xs:element name="customer_email" type="xs:string"/>
+  <xs:element name="customer_ip" type="xs:string"/>
+  <xs:element name="shipping_first_name" type="xs:string"/>
+  <xs:element name="shipping_last_name" type="xs:string"/>
+  <xs:element name="shipping_company" type="xs:string"/>
+  <xs:element name="shipping_address1" type="xs:string"/>
+  <xs:element name="shipping_address2" type="xs:string"/>
+  <xs:element name="shipping_city" type="xs:string"/>
+  <xs:element name="shipping_state" type="xs:string"/>
+  <xs:element name="shipping_postal_code" type="xs:string"/>
+  <xs:element name="shipping_country" type="xs:string"/>
+  <xs:element name="shipping_phone" type="xs:string"/>
+  <xs:element name="shipto_shipping_service_description" type="xs:string"/>
+  <xs:element name="purchase_order" type="xs:string"/>
+  <xs:element name="cc_number_masked" type="xs:string"/>
+  <xs:element name="cc_type" type="xs:string"/>
+  <xs:element name="cc_exp_month" type="xs:byte"/>
+  <xs:element name="cc_exp_year" type="xs:short"/>
+  <xs:element name="cc_start_date_month" type="xs:byte"/>
+  <xs:element name="cc_start_date_year" type="xs:short"/>
+  <xs:element name="cc_issue_number" type="xs:byte"/>
+  <xs:element name="product_total" type="xs:float"/>
+  <xs:element name="tax_total" type="xs:byte"/>
+  <xs:element name="shipping_total" type="xs:float"/>
+  <xs:element name="order_total" type="xs:float"/>
+  <xs:element name="payment_gateway_type" type="xs:string"/>
+  <xs:element name="receipt_url" type="xs:anyURI"/>
+  <xs:element name="taxes" type="xs:string"/>
+  <xs:element name="discounts" type="xs:string"/>
+  <xs:element name="attributes" type="xs:string"/>
+  <xs:element name="status" type="xs:string"/>
+  <xs:element name="customer_password" type="xs:string"/>
+  <xs:element name="customer_password_salt" type="xs:string"/>
+  <xs:element name="customer_password_hash_type" type="xs:string"/>
+  <xs:element name="customer_password_hash_config" type="xs:byte"/>
+  <xs:element name="custom_fields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="custom_field" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transaction_details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="transaction_detail" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipto_addresses" type="xs:string"/>
+  <xs:element name="transaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="store_id"/>
+        <xs:element ref="store_version"/>
+        <xs:element ref="is_test"/>
+        <xs:element ref="is_hidden"/>
+        <xs:element ref="data_is_fed"/>
+        <xs:element ref="transaction_date"/>
+        <xs:element ref="processor_response"/>
+        <xs:element ref="customer_id"/>
+        <xs:element ref="is_anonymous"/>
+        <xs:element ref="minfraud_score"/>
+        <xs:element ref="customer_first_name"/>
+        <xs:element ref="customer_last_name"/>
+        <xs:element ref="customer_company"/>
+        <xs:element ref="customer_address1"/>
+        <xs:element ref="customer_address2"/>
+        <xs:element ref="customer_city"/>
+        <xs:element ref="customer_state"/>
+        <xs:element ref="customer_postal_code"/>
+        <xs:element ref="customer_country"/>
+        <xs:element ref="customer_phone"/>
+        <xs:element ref="customer_email"/>
+        <xs:element ref="customer_ip"/>
+        <xs:element ref="shipping_first_name"/>
+        <xs:element ref="shipping_last_name"/>
+        <xs:element ref="shipping_company"/>
+        <xs:element ref="shipping_address1"/>
+        <xs:element ref="shipping_address2"/>
+        <xs:element ref="shipping_city"/>
+        <xs:element ref="shipping_state"/>
+        <xs:element ref="shipping_postal_code"/>
+        <xs:element ref="shipping_country"/>
+        <xs:element ref="shipping_phone"/>
+        <xs:element ref="shipto_shipping_service_description"/>
+        <xs:element ref="purchase_order"/>
+        <xs:element ref="cc_number_masked"/>
+        <xs:element ref="cc_type"/>
+        <xs:element ref="cc_exp_month"/>
+        <xs:element ref="cc_exp_year"/>
+        <xs:element ref="cc_start_date_month"/>
+        <xs:element ref="cc_start_date_year"/>
+        <xs:element ref="cc_issue_number"/>
+        <xs:element ref="product_total"/>
+        <xs:element ref="tax_total"/>
+        <xs:element ref="shipping_total"/>
+        <xs:element ref="order_total"/>
+        <xs:element ref="payment_gateway_type"/>
+        <xs:element ref="receipt_url"/>
+        <xs:element ref="taxes"/>
+        <xs:element ref="discounts"/>
+        <xs:element ref="attributes"/>
+        <xs:element ref="status"/>
+        <xs:element ref="customer_password"/>
+        <xs:element ref="customer_password_salt"/>
+        <xs:element ref="customer_password_hash_type"/>
+        <xs:element ref="customer_password_hash_config"/>
+        <xs:element ref="custom_fields"/>
+        <xs:element ref="transaction_details"/>
+        <xs:element ref="shipto_addresses"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transactions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="transaction" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="foxydata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="transactions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
