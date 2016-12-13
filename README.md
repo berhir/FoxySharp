@@ -35,7 +35,7 @@ Contains base classes that are used by the other projects.
 ### FoxySharp.Samples.Client
 Console application that uses the sample client from the FoxySharp library to read, update and create customers.
 
-Required settings in the appsettings.config:
+Required settings in the appsettings.json:
 ```json
 {
   "FoxyCart": {
@@ -53,7 +53,7 @@ Required settings in the appsettings.config:
 ### FoxySharp.Samples.Web
 ASP.NET Core project with a sample implementation of Single Sign-On and XML data feed.
 
-Required settings in the appsettings.config:
+Required settings in the appsettings.json:
 ```json
 {
   ...
@@ -76,7 +76,7 @@ Required settings in the appsettings.config:
 Console application to help you set up and debug your FoxyCart XML data feed implementation.
 It's designed to mimic FoxyCart.com and send encrypted and encoded XML to a URL of your choice. It will print out the response that your script gives back, which should be "foxy" if successful.
 
-Required settings in the appsettings.config:
+Required settings in the appsettings.json:
 ```json
 {
   "FoxyCart": {
