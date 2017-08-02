@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Bernd Hirschmann</Authors>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <AssemblyName>FoxySharp</AssemblyName>
+    <PackageId>FoxySharp</PackageId>
+    <PackageLicenseUrl>https://github.com/berhir/FoxySharp/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net45+win8</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HoneyBear.HalClient" Version="1.1.115" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
+    <PackageReference Include="WinInsider.System.Net.Http.Formatting" Version="1.0.5" />
+  </ItemGroup>
+
+</Project>

@@ -1,25 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52592B92-29BD-4F47-9E39-24B76C021EFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96163270-F0A3-41D3-8DA9-22CD2ED19A49}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FoxySharp", "FoxySharp\FoxySharp.xproj", "{FF6632B7-181E-4B75-8BC7-72ACC75E5B56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoxySharp", "FoxySharp\FoxySharp.csproj", "{FF6632B7-181E-4B75-8BC7-72ACC75E5B56}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FoxySharp.Samples.Client", "FoxySharp.Samples.Client\FoxySharp.Samples.Client.xproj", "{3CCD39B1-B514-415A-84A5-108E09E2442C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoxySharp.Samples.Client", "FoxySharp.Samples.Client\FoxySharp.Samples.Client.csproj", "{3CCD39B1-B514-415A-84A5-108E09E2442C}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HoneyBear.HalClient", "Submodules\HoneyBear.HalClient\Src\HoneyBear.HalClient\HoneyBear.HalClient.xproj", "{048AA506-06D4-482D-A42A-45678F63F7A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoxySharp.Samples.DataFeedTester", "FoxySharp.Samples.DataFeedTester\FoxySharp.Samples.DataFeedTester.csproj", "{014FA039-2E97-4152-811B-3CE76867B44D}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FoxySharp.Samples.DataFeedTester", "FoxySharp.Samples.DataFeedTester\FoxySharp.Samples.DataFeedTester.xproj", "{014FA039-2E97-4152-811B-3CE76867B44D}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FoxySharp.Samples.Web", "FoxySharp.Samples.Web\FoxySharp.Samples.Web.xproj", "{A76A836B-E413-4784-86A1-2B4C96C9D84D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoxySharp.Samples.Web", "FoxySharp.Samples.Web\FoxySharp.Samples.Web.csproj", "{A76A836B-E413-4784-86A1-2B4C96C9D84D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +32,6 @@ Global
 		{3CCD39B1-B514-415A-84A5-108E09E2442C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CCD39B1-B514-415A-84A5-108E09E2442C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CCD39B1-B514-415A-84A5-108E09E2442C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{048AA506-06D4-482D-A42A-45678F63F7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{048AA506-06D4-482D-A42A-45678F63F7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{048AA506-06D4-482D-A42A-45678F63F7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{048AA506-06D4-482D-A42A-45678F63F7A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{014FA039-2E97-4152-811B-3CE76867B44D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{014FA039-2E97-4152-811B-3CE76867B44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{014FA039-2E97-4152-811B-3CE76867B44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -54,7 +47,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FF6632B7-181E-4B75-8BC7-72ACC75E5B56} = {52592B92-29BD-4F47-9E39-24B76C021EFE}
 		{3CCD39B1-B514-415A-84A5-108E09E2442C} = {52592B92-29BD-4F47-9E39-24B76C021EFE}
-		{048AA506-06D4-482D-A42A-45678F63F7A0} = {52592B92-29BD-4F47-9E39-24B76C021EFE}
 		{014FA039-2E97-4152-811B-3CE76867B44D} = {52592B92-29BD-4F47-9E39-24B76C021EFE}
 		{A76A836B-E413-4784-86A1-2B4C96C9D84D} = {52592B92-29BD-4F47-9E39-24B76C021EFE}
 	EndGlobalSection
