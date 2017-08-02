@@ -12,12 +12,8 @@ Run the following commands to build the projects with the .NET CLI (Windows/Linu
 ```
 git clone https://github.com/berhir/FoxySharp.git
 cd FoxySharp/src/
-git submodule init
-git submodule update
 dotnet restore
 ```
-Note: The [HoneyBear.HalClient](https://github.com/eoin55/HoneyBear.HalClient) is includes as submodule until the pull request with .NET Standard support gets merged.
-
 Before you can start the projects you have to update the appsettings.json with your FoxyCart settings (see below).  
 Then go to the root directory of the project you want to start and type
 ```
